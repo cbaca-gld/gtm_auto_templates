@@ -1,0 +1,339 @@
+{
+    "exportFormatVersion": 2,
+    "exportTime": "2023-12-20 21:06:28",
+    "containerVersion": {
+        "path": "accounts/4596627540/containers/11752575/versions/27",
+        "accountId": "4596627540",
+        "containerId": "11752575",
+        "containerVersionId": "27",
+        "name": "TikTok (CB)",
+        "container": {
+            "path": "accounts/4596627540/containers/11752575",
+            "accountId": "4596627540",
+            "containerId": "11752575",
+            "name": "www.bmwofminnetonka.com",
+            "publicId": "GTM-5LPQKD4",
+            "usageContext": [
+                "WEB"
+            ],
+            "fingerprint": "1571948497203",
+            "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/4596627540/containers/11752575/workspaces?apiLink=container",
+            "features": {
+                "supportUserPermissions": true,
+                "supportEnvironments": true,
+                "supportWorkspaces": true,
+                "supportGtagConfigs": false,
+                "supportBuiltInVariables": true,
+                "supportClients": false,
+                "supportFolders": true,
+                "supportTags": true,
+                "supportTemplates": true,
+                "supportTriggers": true,
+                "supportVariables": true,
+                "supportVersions": true,
+                "supportZones": true,
+                "supportTransformations": false
+            },
+            "tagIds": [
+                "GTM-5LPQKD4"
+            ]
+        },
+        "tag": [
+            {
+                "accountId": "4596627540",
+                "containerId": "11752575",
+                "tagId": "148",
+                "name": "TikTok - Base Pixel",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\n\n!function (w, d, t) {\n\n w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=[\"page\",\"track\",\"identify\",\"instances\",\"debug\",\"on\",\"off\",\"once\",\"ready\",\"alias\",\"group\",\"enableCookie\",\"disableCookie\"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i=\"https://analytics.tiktok.com/i18n/pixel/events.js\";ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};var o=document.createElement(\"script\");o.type=\"text/javascript\",o.async=!0,o.src=i+\"?sdkid=\"+e+\"&lib=\"+t;var a=document.getElementsByTagName(\"script\")[0];a.parentNode.insertBefore(o,a)};\n\n\n\n ttq.load('{{TikTok Pixel ID}}');\n\n ttq.page();\n\n}(window, document, 'ttq');\n\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1703105209402",
+                "firingTriggerId": [
+                    "2147479553"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "4596627540",
+                "containerId": "11752575",
+                "tagId": "149",
+                "name": "TikTok - VDP View",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\n  ttq.track('ViewContent', {\n\n\t\"contents\": [\n\n\t\t{\n\n\t\t\t\"content_id\": \"{{VIN}}\", // string. ID of the product. Example: \"1077218\".\n\n\t\t\t\"content_type\": \"product\", // string. Either product or product_group.\n\n\t\t\t\"content_name\": \"{{dlv - eventModel.item_model}}\", // string. The name of the page or product. Example: \"shirt\".\n\n\t\t\t\"content_category\": \"{{dlv - eventModel.item_make}}\", // string. The category of the page or product. Example: \"apparel\".\n\n\t\t\t\"price\": \"{{dlv - eventModel.item_price}}\" // number. The price of a single item. Example: 25.\n\n\t\t}\n\n\t],\n\n\t\"value\": \"{{dlv - eventModel.item_price}}\", // number. Value of the order or items sold. Example: 100.\n\n\t\"currency\": \"USD\" // string. The 4217 currency code. Example: \"USD\".\n\n});\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1703105737400",
+                "firingTriggerId": [
+                    "154"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "4596627540",
+                "containerId": "11752575",
+                "tagId": "156",
+                "name": "TikTok - Lead",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\n  ttq.track('SubmitForm', {\n\n\t\"contents\": [\n\n\t\t{\n\n\t\t\t\"content_id\": \"{{VIN}}\", // string. ID of the product. Example: \"1077218\".\n\n\t\t\t\"content_type\": \"product\", // string. Either product or product_group.\n\n\t\t\t\"content_name\": \"{{dlv - eventModel.item_model}}\" // string. The name of the page or product. Example: \"shirt\".\n\n\t\t}\n\n\t],\n\n\t\"value\": \"{{dlv - eventModel.item_price}}\", // number. Value of the order or items sold. Example: 100.\n\n\t\"currency\": \"USD\" // string. The 4217 currency code. Example: \"USD\".\n\n});\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1703105978286",
+                "firingTriggerId": [
+                    "155"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "4596627540",
+                "containerId": "11752575",
+                "tagId": "158",
+                "name": "TikTok - Contact",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\n  ttq.track('Contact', {\n\n\t\"contents\": [\n\n\t\t{\n\n\t\t\t\"content_id\": \"{{VIN}}\", // string. ID of the product. Example: \"1077218\".\n\n\t\t\t\"content_type\": \"product\", // string. Either product or product_group.\n\n\t\t\t\"content_name\": \"{{dlv - eventModel.item_model}}\" // string. The name of the page or product. Example: \"shirt\".\n\n\t\t}\n\n\t],\n\n\t\"value\": \"{{dlv - eventModel.item_price}}\", // number. Value of the order or items sold. Example: 100.\n\n\t\"currency\": \"USD\" // string. The 4217 currency code. Example: \"USD\".\n\n});\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1703106096619",
+                "firingTriggerId": [
+                    "157"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            }
+        ],
+        "trigger": [
+            {
+                "accountId": "4596627540",
+                "containerId": "11752575",
+                "triggerId": "154",
+                "name": "CE - asc_item_pageview",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "asc_item_pageview"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1703105696529"
+            },
+            {
+                "accountId": "4596627540",
+                "containerId": "11752575",
+                "triggerId": "155",
+                "name": "CE - asc_form_submission",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "asc_form_submission"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1703105756867"
+            },
+            {
+                "accountId": "4596627540",
+                "containerId": "11752575",
+                "triggerId": "157",
+                "name": "CE - asc_click_to_call",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "asc_click_to_call"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1703106093502"
+            }
+        ],
+        "variable": [
+            {
+                "accountId": "4596627540",
+                "containerId": "11752575",
+                "variableId": "147",
+                "name": "TikTok Pixel ID",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "TIKTOKID"
+                    }
+                ],
+                "fingerprint": "1703105121045",
+                "formatValue": {}
+            },
+            {
+                "accountId": "4596627540",
+                "containerId": "11752575",
+                "variableId": "150",
+                "name": "dlv - eventModel.item_price",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "eventModel.item_price"
+                    }
+                ],
+                "fingerprint": "1703105549954",
+                "formatValue": {}
+            },
+            {
+                "accountId": "4596627540",
+                "containerId": "11752575",
+                "variableId": "152",
+                "name": "dlv - eventModel.item_make",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "eventModel.item_make"
+                    }
+                ],
+                "fingerprint": "1703105644089",
+                "formatValue": {}
+            },
+            {
+                "accountId": "4596627540",
+                "containerId": "11752575",
+                "variableId": "153",
+                "name": "dlv - eventModel.item_model",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "eventModel.item_model"
+                    }
+                ],
+                "fingerprint": "1703105674516",
+                "formatValue": {}
+            }
+        ],
+        "fingerprint": "1703106297474",
+        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/4596627540/containers/11752575/versions/27?apiLink=version"
+    }
+}
