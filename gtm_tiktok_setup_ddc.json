@@ -1,0 +1,461 @@
+{
+    "exportFormatVersion": 2,
+    "exportTime": "2024-01-29 16:10:08",
+    "containerVersion": {
+        "path": "accounts/6136291937/containers/135536821/versions/0",
+        "accountId": "6136291937",
+        "containerId": "135536821",
+        "containerVersionId": "0",
+        "container": {
+            "path": "accounts/6136291937/containers/135536821",
+            "accountId": "6136291937",
+            "containerId": "135536821",
+            "name": "www.hagerstownhonda.com",
+            "publicId": "GTM-KMC4DM9Q",
+            "usageContext": [
+                "WEB"
+            ],
+            "fingerprint": "1689947269137",
+            "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/6136291937/containers/135536821/workspaces?apiLink=container",
+            "features": {
+                "supportUserPermissions": true,
+                "supportEnvironments": true,
+                "supportWorkspaces": true,
+                "supportGtagConfigs": false,
+                "supportBuiltInVariables": true,
+                "supportClients": false,
+                "supportFolders": true,
+                "supportTags": true,
+                "supportTemplates": true,
+                "supportTriggers": true,
+                "supportVariables": true,
+                "supportVersions": true,
+                "supportZones": true,
+                "supportTransformations": false
+            },
+            "tagIds": [
+                "GTM-KMC4DM9Q"
+            ]
+        },
+        "tag": [
+            {
+                "accountId": "6136291937",
+                "containerId": "135536821",
+                "tagId": "108",
+                "name": "Data Layer Push - VDP",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\nwindow.dataLayer = window.dataLayer || [];\nwindow.dataLayer.push({\n 'event': 'VDP View',\n 'vehicleData': {{cJS - vehicleData}}\n });\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1706543909829",
+                "firingTriggerId": [
+                    "107"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6136291937",
+                "containerId": "135536821",
+                "tagId": "119",
+                "name": "TikTok Base Pixel",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\n\n!function (w, d, t) {\n\n w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=[\"page\",\"track\",\"identify\",\"instances\",\"debug\",\"on\",\"off\",\"once\",\"ready\",\"alias\",\"group\",\"enableCookie\",\"disableCookie\"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i=\"https://analytics.tiktok.com/i18n/pixel/events.js\";ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};var o=document.createElement(\"script\");o.type=\"text/javascript\",o.async=!0,o.src=i+\"?sdkid=\"+e+\"&lib=\"+t;var a=document.getElementsByTagName(\"script\")[0];a.parentNode.insertBefore(o,a)};\n\n\n\n ttq.load('{{TikTok Pixel ID}}');\n\n ttq.page();\n\n}(window, document, 'ttq');\n\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1706544231720",
+                "firingTriggerId": [
+                    "2147479553"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6136291937",
+                "containerId": "135536821",
+                "tagId": "120",
+                "name": "TikTok - Contact",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\n  ttq.track('Contact', {\n\n\t\"contents\": [\n\n\t\t{\n\n\t\t\t\"content_id\": \"{{dlv - vehicleData.vin}}\", // string. ID of the product. Example: \"1077218\".\n\n\t\t\t\"content_type\": \"product\", // string. Either product or product_group.\n\n\t\t\t\"content_name\": \"{{dlv - vehicleData.model}}\" // string. The name of the page or product. Example: \"shirt\".\n\n\t\t}\n\n\t],\n\n\t\"value\": \"{{dlv - vehicleData.msrp}}\", // number. Value of the order or items sold. Example: 100.\n\n\t\"currency\": \"USD\" // string. The 4217 currency code. Example: \"USD\".\n\n});\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1706544289297",
+                "firingTriggerId": [
+                    "118"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6136291937",
+                "containerId": "135536821",
+                "tagId": "121",
+                "name": "TikTok - Lead",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\n  ttq.track('SubmitForm', {\n\n\t\"contents\": [\n\n\t\t{\n\n\t\t\t\"content_id\": \"{{dlv - vehicleData.vin}}\", // string. ID of the product. Example: \"1077218\".\n\n\t\t\t\"content_type\": \"product\", // string. Either product or product_group.\n\n\t\t\t\"content_name\": \"{{dlv - vehicleData.model}}\" // string. The name of the page or product. Example: \"shirt\".\n\n\t\t}\n\n\t],\n\n\t\"value\": \"{{dlv - vehicleData.msrp}}\", // number. Value of the order or items sold. Example: 100.\n\n\t\"currency\": \"USD\" // string. The 4217 currency code. Example: \"USD\".\n\n});\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1706544331263",
+                "firingTriggerId": [
+                    "117"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6136291937",
+                "containerId": "135536821",
+                "tagId": "122",
+                "name": "TikTok - VDP View",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\n  ttq.track('ViewContent', {\n\n\t\"contents\": [\n\n\t\t{\n\n\t\t\t\"content_id\": \"{{dlv - vehicleData.vin}}\", // string. ID of the product. Example: \"1077218\".\n\n\t\t\t\"content_type\": \"product\", // string. Either product or product_group.\n\n\t\t\t\"content_name\": \"{{dlv - vehicleData.model}}\", // string. The name of the page or product. Example: \"shirt\".\n\n\t\t\t\"content_category\": \"{{dlv - vehicleData.make}}\", // string. The category of the page or product. Example: \"apparel\".\n\n\t\t\t\"price\": \"{{dlv - vehicleData.msrp}}\" // number. The price of a single item. Example: 25.\n\n\t\t}\n\n\t],\n\n\t\"value\": \"{{dlv - vehicleData.msrp}}\", // number. Value of the order or items sold. Example: 100.\n\n\t\"currency\": \"USD\" // string. The 4217 currency code. Example: \"USD\".\n\n});\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1706544508678",
+                "firingTriggerId": [
+                    "116"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            }
+        ],
+        "trigger": [
+            {
+                "accountId": "6136291937",
+                "containerId": "135536821",
+                "triggerId": "107",
+                "name": "CE - ddc.page.vehicleDetailView",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "ddc.page.vehicleDetailView"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1706542915415"
+            },
+            {
+                "accountId": "6136291937",
+                "containerId": "135536821",
+                "triggerId": "116",
+                "name": "CE - VDP View",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "VDP View"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1706543884183"
+            },
+            {
+                "accountId": "6136291937",
+                "containerId": "135536821",
+                "triggerId": "117",
+                "name": "CE - ddc.form.submission",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "ddc.form.submission"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1706543976894"
+            },
+            {
+                "accountId": "6136291937",
+                "containerId": "135536821",
+                "triggerId": "118",
+                "name": "CE - ddc.link.clickToCall",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "ddc.link.clickToCall"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1706544055312"
+            }
+        ],
+        "variable": [
+            {
+                "accountId": "6136291937",
+                "containerId": "135536821",
+                "variableId": "109",
+                "name": "dlv - vehicles",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "vehicles"
+                    }
+                ],
+                "fingerprint": "1706543436499",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6136291937",
+                "containerId": "135536821",
+                "variableId": "110",
+                "name": "cJS - vehicleData",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function(){\n  var vehicleData = {{dlv - vehicles}}[0]\n  return vehicleData\n}"
+                    }
+                ],
+                "fingerprint": "1706543262651",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6136291937",
+                "containerId": "135536821",
+                "variableId": "111",
+                "name": "TikTok Pixel ID",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "TIKTOKID"
+                    }
+                ],
+                "fingerprint": "1706543731349",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6136291937",
+                "containerId": "135536821",
+                "variableId": "112",
+                "name": "dlv - vehicleData.make",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "vehicleData.make"
+                    }
+                ],
+                "fingerprint": "1706543787063",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6136291937",
+                "containerId": "135536821",
+                "variableId": "113",
+                "name": "dlv - vehicleData.model",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "vehicleData.model"
+                    }
+                ],
+                "fingerprint": "1706543801813",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6136291937",
+                "containerId": "135536821",
+                "variableId": "114",
+                "name": "dlv - vehicleData.msrp",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "vehicleData.msrp"
+                    }
+                ],
+                "fingerprint": "1706543829043",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6136291937",
+                "containerId": "135536821",
+                "variableId": "115",
+                "name": "dlv - vehicleData.vin",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "vehicleData.vin"
+                    }
+                ],
+                "fingerprint": "1706543858660",
+                "formatValue": {}
+            }
+        ],
+        "fingerprint": "1706544607996",
+        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/6136291937/containers/135536821/versions/0?apiLink=version"
+    }
+}

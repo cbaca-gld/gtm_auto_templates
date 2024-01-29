@@ -1,0 +1,509 @@
+{
+    "exportFormatVersion": 2,
+    "exportTime": "2024-01-29 15:02:35",
+    "containerVersion": {
+        "path": "accounts/6205752198/containers/171181198/versions/0",
+        "accountId": "6205752198",
+        "containerId": "171181198",
+        "containerVersionId": "0",
+        "container": {
+            "path": "accounts/6205752198/containers/171181198",
+            "accountId": "6205752198",
+            "containerId": "171181198",
+            "name": "www.lovelandbuickgmc.com",
+            "publicId": "GTM-WL5B7S82",
+            "usageContext": [
+                "WEB"
+            ],
+            "fingerprint": "1701899345873",
+            "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/6205752198/containers/171181198/workspaces?apiLink=container",
+            "features": {
+                "supportUserPermissions": true,
+                "supportEnvironments": true,
+                "supportWorkspaces": true,
+                "supportGtagConfigs": false,
+                "supportBuiltInVariables": true,
+                "supportClients": false,
+                "supportFolders": true,
+                "supportTags": true,
+                "supportTemplates": true,
+                "supportTriggers": true,
+                "supportVariables": true,
+                "supportVersions": true,
+                "supportZones": true,
+                "supportTransformations": false
+            },
+            "tagIds": [
+                "GTM-WL5B7S82"
+            ]
+        },
+        "tag": [
+            {
+                "accountId": "6205752198",
+                "containerId": "171181198",
+                "tagId": "109",
+                "name": "TikTok - Lead",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\n  ttq.track('SubmitForm', {\n\n\t\"contents\": [\n\n\t\t{\n\n\t\t\t\"content_id\": \"{{dlv - DO - item_id}}\", // string. ID of the product. Example: \"1077218\".\n\n\t\t\t\"content_type\": \"product\", // string. Either product or product_group.\n\n\t\t\t\"content_name\": \"{{dlv - DO - item_model}}\" // string. The name of the page or product. Example: \"shirt\".\n\n\t\t}\n\n\t],\n\n\t\"value\": \"{{dlv - DO - item_price}}\", // number. Value of the order or items sold. Example: 100.\n\n\t\"currency\": \"USD\" // string. The 4217 currency code. Example: \"USD\".\n\n});\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1706540339221",
+                "firingTriggerId": [
+                    "58"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6205752198",
+                "containerId": "171181198",
+                "tagId": "112",
+                "name": "TikTok - VDP View",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\n  ttq.track('ViewContent', {\n\n\t\"contents\": [\n\n\t\t{\n\n\t\t\t\"content_id\": \"{{dlv - DO - item_id}}\", // string. ID of the product. Example: \"1077218\".\n\n\t\t\t\"content_type\": \"product\", // string. Either product or product_group.\n\n\t\t\t\"content_name\": \"{{dlv - DO - item_model}}\", // string. The name of the page or product. Example: \"shirt\".\n\n\t\t\t\"content_category\": \"{{dlv - DO - item_make}}\", // string. The category of the page or product. Example: \"apparel\".\n\n\t\t\t\"price\": \"{{dlv - DO - item_price}}\" // number. The price of a single item. Example: 25.\n\n\t\t}\n\n\t],\n\n\t\"value\": \"{{dlv - DO - item_price}}\", // number. Value of the order or items sold. Example: 100.\n\n\t\"currency\": \"USD\" // string. The 4217 currency code. Example: \"USD\".\n\n});\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1706540391105",
+                "firingTriggerId": [
+                    "13"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6205752198",
+                "containerId": "171181198",
+                "tagId": "114",
+                "name": "TikTok - Contact",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\n  ttq.track('Contact', {\n\n\t\"contents\": [\n\n\t\t{\n\n\t\t\t\"content_id\": \"{{dlv - DO - item_id}}\", // string. ID of the product. Example: \"1077218\".\n\n\t\t\t\"content_type\": \"product\", // string. Either product or product_group.\n\n\t\t\t\"content_name\": \"{{dlv - DO - item_model}}\" // string. The name of the page or product. Example: \"shirt\".\n\n\t\t}\n\n\t],\n\n\t\"value\": \"{{dlv - DO - item_price}}\", // number. Value of the order or items sold. Example: 100.\n\n\t\"currency\": \"USD\" // string. The 4217 currency code. Example: \"USD\".\n\n});\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1706540325385",
+                "firingTriggerId": [
+                    "3"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6205752198",
+                "containerId": "171181198",
+                "tagId": "115",
+                "name": "TikTok - Base Pixel",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\n\n!function (w, d, t) {\n\n w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=[\"page\",\"track\",\"identify\",\"instances\",\"debug\",\"on\",\"off\",\"once\",\"ready\",\"alias\",\"group\",\"enableCookie\",\"disableCookie\"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i=\"https://analytics.tiktok.com/i18n/pixel/events.js\";ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};var o=document.createElement(\"script\");o.type=\"text/javascript\",o.async=!0,o.src=i+\"?sdkid=\"+e+\"&lib=\"+t;var a=document.getElementsByTagName(\"script\")[0];a.parentNode.insertBefore(o,a)};\n\n\n\n ttq.load('{{TikTok Pixel ID}}');\n\n ttq.page();\n\n}(window, document, 'ttq');\n\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1706540067890",
+                "firingTriggerId": [
+                    "2147479553"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            }
+        ],
+        "trigger": [
+            {
+                "accountId": "6205752198",
+                "containerId": "171181198",
+                "triggerId": "3",
+                "name": "CE - do.click_to_call",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "do.click_to_call"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1704400332285"
+            },
+            {
+                "accountId": "6205752198",
+                "containerId": "171181198",
+                "triggerId": "13",
+                "name": "Window Loaded - VDP",
+                "type": "WINDOW_LOADED",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{isVDP}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "true"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1700169548543"
+            },
+            {
+                "accountId": "6205752198",
+                "containerId": "171181198",
+                "triggerId": "58",
+                "name": "CE - DO Form Submission",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "do.form_submission"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1701901014955"
+            }
+        ],
+        "variable": [
+            {
+                "accountId": "6205752198",
+                "containerId": "171181198",
+                "variableId": "5",
+                "name": "isVDP",
+                "type": "remm",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "true"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "input",
+                        "value": "{{Page Path}}"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "fullMatch",
+                        "value": "true"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "replaceAfterMatch",
+                        "value": "true"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "defaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "ignoreCase",
+                        "value": "true"
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "map",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "key",
+                                        "value": ".*(/inventory/).*"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "true"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "key",
+                                        "value": ".*(/auto/).*"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "true"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "key",
+                                        "value": "^/new-.*"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "true"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "key",
+                                        "value": "^/used-.*"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "true"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "key",
+                                        "value": "^/certified-.*"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "true"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "key",
+                                        "value": "^/vehicledetails/.*"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "true"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1701900502792",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6205752198",
+                "containerId": "171181198",
+                "variableId": "39",
+                "name": "dlv - DO - item_model",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "do.item_model"
+                    }
+                ],
+                "fingerprint": "1701900886247",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6205752198",
+                "containerId": "171181198",
+                "variableId": "60",
+                "name": "dlv - DO - item_id",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "do.item_id"
+                    }
+                ],
+                "fingerprint": "1701900933412",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6205752198",
+                "containerId": "171181198",
+                "variableId": "61",
+                "name": "dlv - DO - item_make",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "do.item_make"
+                    }
+                ],
+                "fingerprint": "1701900875084",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6205752198",
+                "containerId": "171181198",
+                "variableId": "111",
+                "name": "TikTok Pixel ID",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "TIKTOKID"
+                    }
+                ],
+                "fingerprint": "1706540098940",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6205752198",
+                "containerId": "171181198",
+                "variableId": "116",
+                "name": "dlv - DO - item_price",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "do.item_price"
+                    }
+                ],
+                "fingerprint": "1706540177531",
+                "formatValue": {}
+            }
+        ],
+        "builtInVariable": [
+            {
+                "accountId": "6205752198",
+                "containerId": "171181198",
+                "type": "PAGE_PATH",
+                "name": "Page Path"
+            }
+        ],
+        "fingerprint": "1706540555717",
+        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/6205752198/containers/171181198/versions/0?apiLink=version"
+    }
+}
